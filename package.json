@@ -1,0 +1,19 @@
+{
+  "name": "smash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schmackkerich/Project-smash.git"
+  },
+  "author": "Schmakkes, Doderich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Schmackkerich/Project-smash/issues"
+  },
+  "homepage": "https://github.com/Schmackkerich/Project-smash#readme"
+}
