@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "CCR"; /*a name to be used later*/
+  src: url("https://dl.dafont.com/dl/?f=chocolate_covered_raindrops"); /*URL to font */
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(129, 86, 251, 1);
+}
+
+.header {
+  height: 10%;
+  width: 100%;
+  background-color: rgba(245, 215, 215, 1);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.textBody {
+  font-family: "CCR";
+  width: 100%;
+  padding: 20;
+}
