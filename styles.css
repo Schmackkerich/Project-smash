@@ -10,13 +10,43 @@ body {
 
 @font-face {
   font-family: "CCR"; /*a name to be used later*/
-  src: url("https://dl.dafont.com/dl/?f=chocolate_covered_raindrops"); /*URL to font */
+  src: url("../fonts/Chocolate Covered Raindrops.ttf"); /*URL to font */
 }
 
 #content {
   height: 100%;
   width: 100%;
   background-color: rgba(129, 86, 251, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#heartTitle {
+  font-size: 60px;
+  position: relative;
+  text-align: center;
+}
+
+.sheet {
+  font-family: "CCR";
+  height: 28%;
+  width: 90%;
+  background-color: rgba(245, 215, 215, 1);
+  border-radius: 10%;
+  margin: 5%;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#question {
+  font-size: 38px;
+  line-height: 28px;
+  margin: 15px;
+  font-weight: bold;
 }
 
 .header {
@@ -25,14 +55,90 @@ body {
   background-color: rgba(245, 215, 215, 1);
   margin: 0 auto;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  display: block;
+  justify-content: center;
 }
 
 .textBody {
-  font-family: "CCR";
   width: 100%;
-  padding: 20;
+  display: flex;
+  flex-direction: column;
+}
+.checkboxRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  width: 80%;
+}
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  color: yellow;
+  width: 22px;
+  height: 22px;
+  border: 1px solid gray;
+  border-radius: 0.15em;
+  display: grid;
+  place-content: center;
+  transform: translateY(-0.075em);
+}
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="radio"]:checked {
+  background-color: purple;
+}
+.checkboxLable {
+  width: 90%;
+  text-align: left;
+}
+.checkbox {
+  width: 45px;
+  height: 15px;
+  background: #555;
+  margin: 20px 10px;
+  position: relative;
+  border-radius: 5px;
+}
+.textParagraph {
+  margin: 5%;
+  margin-top: 0%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+.textTitle {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+}
+.submitBtn {
+  width: 80%;
+  height: 8%;
+  background: #fed7ff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  border-color: 1px solid black;
 }
