@@ -132,7 +132,7 @@ input[type="radio"]:checked {
   position: relative;
   text-align: center;
   width: 100%;
-  margin: 10px;
+  margin: 0px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
